@@ -1,0 +1,46 @@
+.secBg{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #343541 !important;
+}
+
+.midCon{
+    width:30%; /* Adjust width as needed */
+    min-height: 350px ; /* Adjust height as needed */
+    background-color: #444654 !important;
+    border-radius: 10px;
+}
+
+.inputField{
+    background-color: #343541 !important;
+    border: none;
+    color: rgb(209, 213, 219);
+
+}
+
+.inputLabel{
+    color: rgb(209, 213, 219);
+
+}
+
+.btnLogin{
+    background-color: #1A7F64 !important;
+}
+
+.txtColor{
+    color: rgb(209, 213, 219) !important; 
+
+}
+
+@media (max-width:999px) {
+    .midCon{
+        width: 100%; /* Adjust width as needed */
+        min-height: 350px ; /* Adjust height as needed */
+        background-color: #444654 !important;
+        border-radius: 10px;
+    }
+    
+}
