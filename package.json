@@ -88,6 +88,7 @@
     "react-dom": "^18.2.0",
     "react-i18next": "^12.2.0",
     "react-markdown": "^8.0.5",
+    "react-router-dom": "^6.26.1",
     "react-scroll-to-bottom": "^4.2.0",
     "react-select": "^5.8.0",
     "react-toastify": "^10.0.5",
