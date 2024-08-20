@@ -28,12 +28,13 @@ const RoleSelector = React.memo(
       <div className='prose dark:prose-invert relative'>
         <button
           className='btn btn-neutral btn-small flex gap-1'
+          
           aria-label={t(role) as string}
           type='button'
-          onClick={() => setDropDown((prev) => !prev)}
+          
         >
           {t(role)}
-          <DownChevronArrow />
+          {/* <DownChevronArrow /> */}
         </button>
         <div
           ref={dropDownRef}
@@ -43,8 +44,9 @@ const RoleSelector = React.memo(
           } absolute top-100 bottom-100 z-10 bg-white rounded-lg shadow-xl border-b border-black/10 dark:border-gray-900/50 text-gray-800 dark:text-gray-100 group dark:bg-gray-800 opacity-90`}
         >
           <ul
-            className='text-sm text-gray-700 dark:text-gray-200 p-0 m-0'
+            className='text-sm text-gray-700 dark:text-gray-200 p-0 m-0 pointer-events-none opacity-50'
             aria-labelledby='dropdownDefaultButton'
+            
           >
             {roles.map((r) => (
               <li
