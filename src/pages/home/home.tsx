@@ -29,11 +29,15 @@ function home() {
       const oldChats = localStorage.getItem('chats');
       const apiKey = localStorage.getItem('apiKey');
       const theme = localStorage.getItem('theme');
-  
+      const apiKeyFromEnv = import.meta.env.VITE_OPENAI_API_KEY ;
+    //   console.log("hey" , apiKeyFromEnv)
       if (apiKey) {
         // legacy local storage
         setApiKey(apiKey);
         localStorage.removeItem('apiKey');
+      }else{
+        console.log("set Api" ,apiKeyFromEnv )
+        setApiKey(apiKeyFromEnv);
       }
   
       if (theme) {
