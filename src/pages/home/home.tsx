@@ -36,7 +36,6 @@ function home() {
         setApiKey(apiKey);
         localStorage.removeItem('apiKey');
       }else{
-        console.log("set Api" ,apiKeyFromEnv )
         setApiKey(apiKeyFromEnv);
       }
   
